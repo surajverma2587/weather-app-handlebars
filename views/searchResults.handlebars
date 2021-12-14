@@ -1,0 +1,36 @@
+<header>
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Weather App</h1>
+    <p class="lead">Your one stop application for all weather data</p>
+    <hr class="my-4" />
+
+    <!-- FORM COMPONENT -->
+    <form class="d-flex flex-wrap justify-content-center" id="search-form">
+      <div class="m-3">
+        <label for="city-name" class="visually-hidden">Password</label>
+        <input
+          type="text"
+          class="form-control"
+          id="city-name"
+          placeholder="Enter city name"
+        />
+      </div>
+      <div class="m-3">
+        <button type="submit" class="btn btn-primary mb-3">Search</button>
+      </div>
+    </form>
+  </div>
+</header>
+<main class="m-3">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{name}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{description}}</h6>
+      <ul class="list-group pt-3">
+        <li class="list-group-item">Temperature: {{temperature}}</li>
+        <li class="list-group-item">Humidity: {{humidity}}</li>
+        <li class="list-group-item">Wind Speed: {{windSpeed}}</li>
+      </ul>
+    </div>
+  </div>
+</main>
